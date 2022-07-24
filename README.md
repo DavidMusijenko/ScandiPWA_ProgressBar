@@ -42,15 +42,12 @@ Then open composer.json file and replace the list of dependencies in the require
 "scandipwa/customer-downloadable-graphql": "1.0.2",
 "scandipwa/directory-graphql": "1.0.1",
 "scandipwa/catalog-customer-graphql": "1.0.0"
+
+    
 Next open package.json, find the proxy field, and replace it with the following value:
 
 https://demo100-ors-1588667385-swpwa451-zco.scandipwa.cloud/
-It’s also advisable to disable eslint for this task. Just head to the eslintConfig section inside the package.json and replace it with the next lines:
 
-"eslintConfig": {
-    "extends": "@scandipwa",
-    "ignorePatterns": ["src/**"]
-},
 Now you can start the project:
 
 yarn start
