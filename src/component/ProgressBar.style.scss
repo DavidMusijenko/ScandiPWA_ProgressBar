@@ -1,0 +1,101 @@
+.progress-bar__wrapper {
+  position: relative;
+  height: 5rem;
+  background: #efefef;
+}
+
+.progress-bar__line {
+  position: absolute;
+  align-items: center;
+  background: var(--primary-base-color);
+  height: 5px;
+  top: 17px;
+  transition: 1.2s;
+}
+
+.progress-bar__steps-container {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 2px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.progress-bar__circle {
+  margin-top: 2px;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+
+  //didn't manage to add border/outline to round object
+  //to make a gap between progress bar and step
+
+  transition: 1.2s;
+}
+
+.progress-bar__circle--active {
+  background-color: var(--primary-base-color);
+  transition: 1.5s;
+}
+
+.progress-bar__circle--not-active {
+  background-color: var(--secondary-dark-color);
+  transition: 1.5s;
+}
+
+.progress-bar__circle--completed {
+  background-color: var(--primary-dark-color);
+  transition: 3s;
+  //to hide step's number
+  z-index: 100;
+
+  //tick mark stuff
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+//tick mark stuff
+.progress-bar__circle--completed::before {
+  transition: 3s;
+
+  position: absolute;
+  left: 10%;
+  top: 40%;
+  height: 50%;
+  width: 3px;
+  background-color: #ffffff;
+  content: "";
+  transform: translateX(10px) rotate(-45deg);
+  transform-origin: left bottom;
+}
+
+//tick mark stuff
+.progress-bar__circle--completed::after {
+  transition: 3s;
+
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff;
+  content: "";
+  transform: translateX(10px) rotate(-45deg);
+  transform-origin: left bottom;
+}
+
+.progress-bar__circle-number {
+  position: absolute;
+  margin-top: -23px;
+  margin-left: 9px;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+
+.progress-bar__step-name {
+  position: absolute;
+  margin-top: 3px;
+}
