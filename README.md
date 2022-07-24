@@ -2,7 +2,7 @@
 
 ![grab-landing-page](https://github.com/DavidMusijenko/ScandiPWA_ProgressBar2/blob/main/demo.gif)
 
-## Installation
+# Installation
 
 Before you start, please ensure that you have Linux OS, node 14, npm 6, and yarn.
 If you don’t have yarn, you can install it with the following command:
@@ -10,11 +10,11 @@ If you don’t have yarn, you can install it with the following command:
 npm -g install yarn
 First please follow these steps in order to install and set up your ScandiPWA project.
 
-# Install a project
+## Install a project
 yarn create scandipwa-app <FOLDER>
-# Enter to the project directory
-cd <FOLDER>
-# Downgrade ScandiPWA
+## Enter to the project directory
+cd "<FOLDER>"
+## Downgrade ScandiPWA
 yarn add @scandipwa/scandipwa@4.5.1
 Then open composer.json file and replace the list of dependencies in the require section with the following values:
 
