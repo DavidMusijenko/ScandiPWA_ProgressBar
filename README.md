@@ -13,7 +13,7 @@ First please follow these steps in order to install and set up your ScandiPWA pr
 ## Install a project
 yarn create scandipwa-app <FOLDER>
 ## Enter to the project directory
-cd "<FOLDER>"
+cd FOLDER
 ## Downgrade ScandiPWA
 yarn add @scandipwa/scandipwa@4.5.1
 Then open composer.json file and replace the list of dependencies in the require section with the following values:
