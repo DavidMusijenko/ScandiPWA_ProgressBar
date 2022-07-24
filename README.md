@@ -1,4 +1,4 @@
-# Custom Progress Bar for ScnadiPWA Magento theme
+# Custom Progress Bar for ScandiPWA Magento theme
 
 ![grab-landing-page](https://github.com/DavidMusijenko/ScandiPWA_ProgressBar2/blob/main/demo.gif)
 
